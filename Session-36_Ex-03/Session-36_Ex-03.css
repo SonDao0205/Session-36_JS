@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}   
+
+.element{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.changeColor{
+    padding: 10px 30px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+.changeColor:hover{
+    cursor: pointer;
+}
+
+#red{
+    background-color: rgb(144, 0, 0);
+    color: white;
+}
+
+#red:hover{
+    background-color: rgb(255, 97, 97);
+}   
+
+#blue{
+    background-color: rgb(60, 60, 255);
+    color: white;
+}
+
+#blue:hover{
+    background-color: rgb(142, 142, 255);
+}
+
+#yellow{
+    background-color: rgb(175, 175, 0);
+    color: black;
+}
+
+#yellow:hover{
+    background-color: rgb(255, 214, 111);
+}
+
+#purple{
+    background-color: rgb(184, 0, 184);
+    color: white;
+}
+
+#purple:hover{
+    background-color: rgb(255, 105, 255);
+}
