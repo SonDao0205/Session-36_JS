@@ -3,13 +3,24 @@ const commentInputElement = document.querySelector("#comment-input")
 const commentListElement = document.querySelector("#comment-list")
 const commentLocals = JSON.parse(localStorage.getItem("comments")) || []
 let countStar = 0
-// localStorage.clear()
+
 starsElement.forEach((star) => {
     star.addEventListener("click", (event) => {
-        star.classList.add("active")
-        countStar = star.dataset.value
-        console.log(starsElement);
-        
+        // star.classList.add("active")
+        // countStar = star.dataset.value
+        // console.log(starsElement);
+        if (countStar <= 5) {
+            if (star.classList.contains("active")) {
+                star.classList.remove("active")
+                countStar--
+                console.log(countStar);
+            }
+            else{
+                star.classList.add("active")
+                countStar++
+                console.log(countStar);
+            }    
+        }
     })    
 });
 
